@@ -122,7 +122,7 @@ jobs:
       - name: ⤵️ Download addons metadata
         uses: enflo/curl-action@v1
         with:
-          curl: -o addons.yaml https://raw.githubusercontent.com/Poeschl-HomeAssistant-Addons/repository/refs/heads/main/.addons.yml
+          curl: -o addons.yaml https://raw.githubusercontent.com/${{ github.repository_owner }}/${{ inputs.repository }}/refs/heads/main/.addons.yml
 
       - name: ℹ️ Determine addon image name
         id: addon-image
