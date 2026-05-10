@@ -156,7 +156,7 @@ jobs:
 
       - name: 🚀 Execute image build
         id: build-image
-        uses: redhat-actions/buildah-build@v2.13
+        uses: redhat-actions/buildah-build@main
         with:
           containerfiles: "./${{ needs.information.outputs.addon-folder }}/Dockerfile"
           context: "./${{ needs.information.outputs.addon-folder }}"
